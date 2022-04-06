@@ -1,0 +1,138 @@
+/*
+    ASPECTOS GENERALES
+*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    margin: 1em 3em;
+    width: 90vw;
+}
+
+img {
+    max-width: 1000px;
+    width: 90vw;
+}
+p {
+    max-width: 80vw;
+}
+
+/*
+    header
+*/
+header {
+    width: 60vw;
+}
+header > div > p::before {
+    padding: 0 1em 0 0;
+    content: url(/assets/img/6dots.svg);
+}
+/*
+    HEADINGS
+*/
+h1, h2, h3 {
+    font-family: 'Playfair Display';
+    margin: 1em 0 0.5em 0;
+}
+h3 {
+    font-style: italic;
+}
+/*
+    DIV DEBAJO DE LA IMAGEN :
+    DETALLES DE LA RECETA
+*/
+#details {
+    position: absolute;
+    border-radius: 10px;
+    margin: 0 3em;
+    right: 3em;
+    bottom: -5em;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    padding: 2em;
+}
+#details > div {
+    display:flex;
+    align-items: center;
+}
+#details > div > span {
+    padding: 0.5em;
+}
+#details h4 {
+    text-transform: uppercase;
+    color: #BDBDBD;
+    font-size:0.8em;
+    font-weight:700;
+}
+#details p {
+    color: #333333;
+    font-weight: 500;
+}
+
+    /*
+        HOVER NARANJA DE LOS DETALLES
+    */
+#details p:hover {
+    color:#F2994A;
+}
+#details > div:hover {
+    color:#F2994A;
+}
+
+/*
+    RECETA
+*/
+main {
+    width: 60vw;
+}
+label {
+    display:block;
+    margin-bottom: 1em;
+}
+ol li {
+    margin: 1em 0;
+}
+/*
+    CITE : SOURCE
+*/
+cite {
+    color:#BDBDBD;
+}
+cite a {
+    color:#BDBDBD;
+}
+/*
+    FOOTER
+*/
+footer {
+    color:#BDBDBD
+}
+footer a {
+    color: #BDBDBD;
+    font-weight: 700;
+}
+/*
+    MEDIA QUERIES
+*/
+@media screen and (max-width:1250px) {
+    body {
+        margin: 0;
+    }
+    main, header {
+        width: 75vw;
+    }
+
+    #details {
+        right: -2em;
+        top: 15em;
+        height: fit-content;
+        background-color: #fff;
+    }
+}
